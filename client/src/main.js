@@ -1,6 +1,6 @@
 const display = document.getElementById('app')
 const form = document.getElementById('form')
-const baseURL = 'https://depository-git-client.onrender.com/'
+const baseURL = 'https://depository-git-server.onrender.com/'
 
 
 async function fetchData() {
