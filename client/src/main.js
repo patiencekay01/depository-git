@@ -4,9 +4,8 @@ const baseURL = 'https://depository-git-server.onrender.com/'
 
 
 async function fetchData() {
-  const response = await fetch(`${baseUrl}/messages`)
+  const response = await fetch(`${baseURL}/messages`)
   const messages = await response.json()
-  
 
   console.log(messages)
 
@@ -41,7 +40,7 @@ async function handleSubmit(event) {
   const userInput = Object.fromEntries(formData)
   const userInputJSON = JSON.stringify(userInput)
 
-  const response = await fetch(`${baseUrl}/messages`, {
+  const response = await fetch(`${baseURL}/messages`, {
     headers: {
       "Content-Type" : "application/json"
     },
